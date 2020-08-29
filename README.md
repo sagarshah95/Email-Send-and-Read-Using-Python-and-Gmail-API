@@ -186,15 +186,15 @@ The msg object, which is email module's Message object, has many other fields to
 After I ran the code for my test gmail account, I got this output:
 
 Subject: Thanks for Subscribing to our Newsletter !
-From: rockikz@thepythoncode.com
+From: sagar600360@gmail.com
 ====================================================================================================
 Subject: An email with a photo as an attachment
-From: Python Code <rockikz@thepythoncode.com>
+From: Python Code <sagar600360@gmail.com>
 Get the photo now!
 
 ====================================================================================================
 Subject: A Test message with attachment
-From: Python Code <rockikz@thepythoncode.com>
+From: Python Code <sagar600360@gmail.com>
 There you have it!
 
 ====================================================================================================
