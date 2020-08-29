@@ -1,11 +1,21 @@
-################################################EMAIL SEND###################################################################
-In this article, I will share a way to send success or failure mail notification for any python script using Gmail API. Background in programming in Python will be good to grasp the article.
+########################EMAIL SEND############################
+
+In this article, I will share a way to send success or failure mail notification for any python script using Gmail API. 
+
+Background in programming in Python will be good to grasp the article.
+
 This can be used to set up daily jobs and have notifications sent when the scheduled python scripts run with failure or success.
+
 A sample use case is a python script that runs daily to gather data from different sources to keep a check whether it ran with success or failure.
+
 The first step is to set up sending mail using Gmail API.
+
 Enable the Gmail API ‘https://developers.google.com/gmail/api/quickstart/python’ and save the file credentials.json.
+
 Get the source code from the below local repository and replace the credentials.json obtained in the above step with the repository credentials.json file.
+
 Run the script send_mail.py once to setup Gmail credentials in your root directory by authorizing the app to access Gmail API to send an email uncommenting the test stub with relevant mail addresses.
+
 def send_message(sender, to, subject, plain_msg):
     credentials = get_credentials()
     http = credentials.authorize(httplib2.Http())
@@ -70,9 +80,9 @@ if __name__ == "__main__":
 The above sample_script.py when run will send a failure mail notification since exit code 1 is regarded as a failure.
 Image for post
 sys.exit(0) will send a success notification.
-###############################################################################################################################################################
+##############################################################
 
-########################################################### Read Emails #######################################################################################
+########################## Read Emails ######################
 IMAP is an Internet standard protocol used by email clients to retrieve email messages from a mail server. Unlike the POP3 protocol which downloads email and delete them from the server (and then read them offline), with IMAP, the message does not remain on the local computer, it stays on the server.
 
 To get started, we don't have to install anything, all the modules used in this tutorial are the built-in ones:
