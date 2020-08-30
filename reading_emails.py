@@ -6,8 +6,8 @@ import os
 import csv
 
 # account credentials
-username = "sagar600360@gmail.com"
-password = "Neu#2019"
+username = ""
+password = ""
 
 # number of top emails to fetch
 N = 4
